@@ -238,6 +238,8 @@ Makefile: ../../Assist-S.pro C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++/qmake.conf C
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_quickwidgets.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_serialbus.pri \
+		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_serialbus_private.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_shadertools.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_shadertools_private.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_spatialaudio.pri \
@@ -250,6 +252,8 @@ Makefile: ../../Assist-S.pro C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++/qmake.conf C
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_testlib.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_texttospeech.pri \
+		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_tools_private.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_uiplugin.pri \
 		C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_uitools.pri \
@@ -290,6 +294,8 @@ Makefile: ../../Assist-S.pro C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++/qmake.conf C
 		C:/Qt/6.7.2/mingw_64/mkspecs/features/lex.prf \
 		../../Assist-S.pro \
 		C:/Qt/6.7.2/mingw_64/lib/Qt6Widgets.prl \
+		C:/Qt/6.7.2/mingw_64/lib/Qt6TextToSpeech.prl \
+		C:/Qt/6.7.2/mingw_64/lib/Qt6Multimedia.prl \
 		C:/Qt/6.7.2/mingw_64/lib/Qt6Gui.prl \
 		C:/Qt/6.7.2/mingw_64/lib/Qt6Network.prl \
 		C:/Qt/6.7.2/mingw_64/lib/Qt6Core.prl \
@@ -464,6 +470,8 @@ C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_quickwidgets.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_serialbus.pri:
+C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_serialbus_private.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_shadertools.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_shadertools_private.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_spatialaudio.pri:
@@ -476,6 +484,8 @@ C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_svgwidgets.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_svgwidgets_private.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_testlib.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_testlib_private.pri:
+C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_texttospeech.pri:
+C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_tools_private.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_uiplugin.pri:
 C:/Qt/6.7.2/mingw_64/mkspecs/modules/qt_lib_uitools.pri:
@@ -516,6 +526,8 @@ C:/Qt/6.7.2/mingw_64/mkspecs/features/yacc.prf:
 C:/Qt/6.7.2/mingw_64/mkspecs/features/lex.prf:
 ../../Assist-S.pro:
 C:/Qt/6.7.2/mingw_64/lib/Qt6Widgets.prl:
+C:/Qt/6.7.2/mingw_64/lib/Qt6TextToSpeech.prl:
+C:/Qt/6.7.2/mingw_64/lib/Qt6Multimedia.prl:
 C:/Qt/6.7.2/mingw_64/lib/Qt6Gui.prl:
 C:/Qt/6.7.2/mingw_64/lib/Qt6Network.prl:
 C:/Qt/6.7.2/mingw_64/lib/Qt6Core.prl:
