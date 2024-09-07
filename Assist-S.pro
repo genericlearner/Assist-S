@@ -14,13 +14,18 @@ INCLUDEPATH += $$PWD/include
 
 
 SOURCES += \
+    include/audiorecord.cpp \
+    include/tts.cpp \
     src/assistant.cpp \
     src/main.cpp \
-    src/mainwindow.cpp
+    src/mainwindow.cpp \
+    src/tts.cpp
 
 HEADERS += \
     include/assistant.h \
-    include/mainwindow.h
+    include/audiorecord.h \
+    include/mainwindow.h \
+    include/tts.h
 
 FORMS += \
     forms/mainwindow.ui
@@ -29,4 +34,15 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+
+
+
+
+LIBS += -L$$PWD/libs/lib/pocketsphinx/ -lpocketsphinx
+
+
+INCLUDEPATH += $$PWD/libs/include/pocketsphinx
+DEPENDPATH += $$PWD/libs/include/pocketsphinx
+
 
