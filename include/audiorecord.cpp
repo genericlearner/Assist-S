@@ -8,7 +8,7 @@ Audiorecord::Audiorecord(QObject * parent)
     const auto input = QMediaDevices::defaultAudioInput();
 
     QAudioFormat format;
-    format.setSampleRate(44100);
+    format.setSampleRate(16000);
     format.setChannelCount(1);
     format.setSampleFormat(QAudioFormat::Int16);
 

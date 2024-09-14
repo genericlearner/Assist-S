@@ -6,6 +6,7 @@
 #include <QBuffer>
 #include <QByteArray>
 #include <QMediaDevices>
+#include <pocketsphinx.h>
 
 class Audiorecord: public QObject
 {
@@ -22,6 +23,8 @@ private:
     QIODevice *audioDevice;
     QBuffer *audioBuf;
     QByteArray audiodata;
+
+    ps_decoder_t *ps;
 };
 
 #endif // AUDIORECORD_H

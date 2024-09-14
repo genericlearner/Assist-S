@@ -19,12 +19,14 @@ SOURCES += \
     src/assistant.cpp \
     src/main.cpp \
     src/mainwindow.cpp \
+    src/speechrecognizer.cpp \
     src/tts.cpp
 
 HEADERS += \
     include/assistant.h \
     include/audiorecord.h \
     include/mainwindow.h \
+    include/speechrecognizer.h \
     include/tts.h
 
 FORMS += \
@@ -40,9 +42,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 
 LIBS += -L$$PWD/libs/lib/pocketsphinx/ -lpocketsphinx
-
+LIBS += -L$$PWD/libs/lib/portaudio/ -lportaudio_static_x64
 
 INCLUDEPATH += $$PWD/libs/include/pocketsphinx
 DEPENDPATH += $$PWD/libs/include/pocketsphinx
+
+
+INCLUDEPATH += $$PWD/libs/include/portaudio
+DEPENDPATH += $$PWD/libs/include/portaudio
+
 
 

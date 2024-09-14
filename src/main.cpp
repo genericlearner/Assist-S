@@ -6,13 +6,23 @@
 #include <QTimer>
 #include <cstdio>
 #include <malloc.h>
-#include "pocketsphinx.h"
 #include "audiorecord.h"
+#include "speechrecognizer.h"
+#include "QFile"
 
 
-
-int main(int argc, char *argv[])
+void readAudioData(const QString &filePath, QByteArray &audioData)
 {
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly)) {
+        qCritical() << "Failed to open audio file:" << filePath;
+        return;
+    }
+    audioData = file.readAll();
+    file.close();
+}
+int main(int argc, char *argv[])
+{ /*
     ps_config_t* config;
     ps_decoder_t *decoder;
     ps_endpointer_t* ep;
@@ -24,10 +34,19 @@ int main(int argc, char *argv[])
 
     config = ps_config_init(NULL);
     ps_default_search_args(config);
+    ps_config_set_str(config, "hmm","");
+    ps_config_set_int(config, "samprate", 16000);
+    ps_config_set_int(config, "maxwpf", 40);
 
     decoder = ps_init(config);
-    ps_config_free(config);
-    ps_start_utt()
+
+    if(decoder == NULL){
+        qCritical()<<"failed to initialize decoder";
+        return -1;
+    }
+
+
+
 
     if((decoder = ps_init(config)) == NULL){
         E_FATAL("POCKETSPHINX DECODER INIT FAILED");
@@ -38,15 +57,23 @@ int main(int argc, char *argv[])
     frame_size = ps_endpointer_frame_size(ep);
    frame = static_cast<short*>(std::malloc(frame_size * sizeof(frame[0])));
     if(frame == NULL)
-        E_FATAL_SYSTEM("failed to allocate frame");
+        E_FATAL_SYSTEM("failed to allocate frame");*/
 
-
-
-    Audiorecord recorder;
-    recorder.startRecording();
-   // QTimer::singleShot(5000,&recorder,&Audiorecord::stopRecording);
 
     QApplication a(argc, argv);
+    SpeechRecognizer recognizer;
+
+    // Initialize the SpeechRecognizer
+    recognizer.initialize();
+
+    // Load audio data from a file
+    QByteArray audioData;
+    readAudioData("C:/Users/umara/Downloads/output.wav", audioData);
+
+    // Process the audio data
+    recognizer.processAudio(audioData);
+
+
     QTextToSpeech *tts = new QTextToSpeech();
 
 

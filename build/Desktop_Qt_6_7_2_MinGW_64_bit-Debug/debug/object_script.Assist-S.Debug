@@ -1,0 +1,11 @@
+debug/audiorecord.o
+debug/tts.o
+debug/assistant.o
+debug/main.o
+debug/mainwindow.o
+debug/speechrecognizer.o
+debug/tts.o
+debug/moc_assistant.o
+debug/moc_audiorecord.o
+debug/moc_mainwindow.o
+debug/moc_speechrecognizer.o

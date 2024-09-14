@@ -1,0 +1,11 @@
+release/audiorecord.o
+release/tts.o
+release/assistant.o
+release/main.o
+release/mainwindow.o
+release/speechrecognizer.o
+release/tts.o
+release/moc_assistant.o
+release/moc_audiorecord.o
+release/moc_mainwindow.o
+release/moc_speechrecognizer.o
